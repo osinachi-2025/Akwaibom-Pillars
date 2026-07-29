@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --background: #f9f7f4;
+  --foreground: #1c1917;
+  --primary: #1a5c2a;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f4f1;
+  --secondary-foreground: #1a5c2a;
+  --accent: #d4a017;
+  --accent-foreground: #1c1917;
+  --muted: #f5f4f1;
+  --muted-foreground: #78716c;
+  --card: #ffffff;
+  --card-foreground: #1c1917;
+  --border: #e7e5e4;
+  --input: #e7e5e4;
+  --ring: #1a5c2a;
+  --radius: 0.75rem;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: var(--border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d6d3d1;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a29e;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-serif);
+  }
+
+  .text-hero-xl {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+  }
+
+  .text-section-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+  }
+
+  .nav-link-underline {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nav-link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    transform: translateX(-101%);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .nav-link-underline:hover::after {
+    transform: translateX(0);
+  }
+
+  .img-zoom-container {
+    overflow: hidden;
+  }
+
+  .img-zoom-container img {
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-zoom-container:hover img {
+    transform: scale(1.04);
+  }
+
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  .reveal-delay-5 { transition-delay: 0.5s; }
+  .reveal-delay-6 { transition-delay: 0.6s; }
+
+  .blob-green {
+    background: radial-gradient(circle, #1a5c2a33 0%, transparent 70%);
+    filter: blur(60px);
+    border-radius: 9999px;
+  }
+
+  .blob-gold {
+    background: radial-gradient(circle, #d4a01733 0%, transparent 70%);
+    filter: blur(60px);
+    border-radius: 9999px;
+  }
+
+  .wave-divider {
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .card-lift {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -12px rgba(26, 92, 42, 0.18);
+  }
+
+  .grain-overlay::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.025;
+  }
+}
