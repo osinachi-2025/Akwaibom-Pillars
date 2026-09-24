@@ -61,7 +61,7 @@ export default function Footer() {
               <AppLogo size={44} />
               <div>
                 <div className="font-display text-xl font-bold text-primary-foreground tracking-tight">
-                  AKPECA
+                  AIPECA
                 </div>
                 <div className="text-[9px] font-semibold uppercase tracking-widest text-white/50 leading-tight">
                   Akwa Ibom Pillars

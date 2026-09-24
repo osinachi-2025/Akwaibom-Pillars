@@ -5,17 +5,17 @@ export type GalleryImage = {
   description: string;
 };
 
-// Replace these paths with the real Akippa media when available.
+// Replace these paths with the real AIPECA media when available.
 export const galleryImages: GalleryImage[] = [
   {
     src: '/assets/gallery%20images/gallery%205.jpeg',
-    alt: 'Akippa impact image five showing people receiving support',
+    alt: 'AIPECA impact image five showing people receiving support',
     title: 'Gallery image 5',
     description: 'A meaningful act of empowerment as community members receive tangible support and encouragement.',
   },
   {
     src: '/assets/gallery%20images/gallery%206.jpeg',
-    alt: 'Akippa impact image six showing people receiving items',
+    alt: 'AIPECA impact image six showing people receiving items',
     title: 'Gallery image 6',
     description: 'A direct moment of impact where people receive the tools and resources needed to move forward.',
   },
@@ -39,7 +39,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     src: '/assets/gallery%20images/gallery%209.jpeg',
-    alt: 'Akippa impact image nine showing people receiving assistance',
+    alt: 'AIPECA impact image nine showing people receiving assistance',
     title: 'Gallery image 9',
     description: 'An empowering scene of people receiving support, care, and a renewed sense of possibility.',
   },
@@ -51,13 +51,13 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     src: '/assets/gallery%20images/gallery%2011.jpeg',
-    alt: 'Akippa testimonial image eleven',
+    alt: 'AIPECA testimonial image eleven',
     title: 'Gallery image 11',
-    description: 'A visual reminder of the trust, hope, and connection that define the Akippa story.',
+    description: 'A visual reminder of the trust, hope, and connection that define the AIPECA story.',
   },
   {
     src: '/assets/gallery%20images/gallery%2012.jpeg',
-    alt: 'Akippa testimonial image twelve',
+    alt: 'AIPECA testimonial image twelve',
     title: 'Gallery image 12',
     description: 'A concluding reflection of shared progress and the lasting impact of community-led empowerment.',
   },

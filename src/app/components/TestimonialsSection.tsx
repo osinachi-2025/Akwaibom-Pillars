@@ -6,7 +6,7 @@ import AppImage from '@/components/ui/AppImage';
 const testimonials = [
 {
   quote:
-  'Before joining AKPECA, I struggled to grow my palm oil business. After accessing a micro-loan and attending their entrepreneurship training, I now supply three markets in Uyo. This cooperative changed my life.',
+  'Before joining AIPECA, I struggled to grow my palm oil business. After accessing a micro-loan and attending their entrepreneurship training, I now supply three markets in Uyo. This cooperative changed my life.',
   name: 'Ngozi Okafor',
   role: 'Palm Oil Trader',
   location: 'Uyo LGA',
@@ -15,7 +15,7 @@ const testimonials = [
 },
 {
   quote:
-  'The agricultural support program gave me access to improved seedlings and connected me to buyers I never knew existed. My cassava yield doubled in the first season. AKPECA is the real deal.',
+  'The agricultural support program gave me access to improved seedlings and connected me to buyers I never knew existed. My cassava yield doubled in the first season. AIPECA is the real deal.',
   name: 'Akpan Inyang',
   role: 'Smallholder Farmer',
   location: 'Eket LGA',
@@ -24,7 +24,7 @@ const testimonials = [
 },
 {
   quote:
-  'As a young woman in Ikot Abasi, I never thought I could start my own fashion business. AKPECA\'s women empowerment program gave me the skills, the seed capital, and most importantly — the confidence.',
+  'As a young woman in Ikot Abasi, I never thought I could start my own fashion business. AIPECA\'s women empowerment program gave me the skills, the seed capital, and most importantly — the confidence.',
   name: 'Comfort Bassey',
   role: 'Fashion Entrepreneur',
   location: 'Ikot Abasi LGA',

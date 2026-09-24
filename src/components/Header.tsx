@@ -72,7 +72,7 @@ export default function Header() {
             <Link
               href="/"
               className="flex items-center gap-3 focus:outline-none group"
-              aria-label="AKPECA Home">
+              aria-label="AIPECA Home">
 
               <AppLogo size={40} />
               <div className="flex flex-col leading-tight">

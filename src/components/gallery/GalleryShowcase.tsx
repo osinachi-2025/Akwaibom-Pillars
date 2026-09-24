@@ -151,12 +151,12 @@ export default function GalleryShowcase() {
                 Our Gallery
               </span>
               <h2 className="font-display text-section-title text-white">
-                Explore <span className="italic text-[#d4a017]">Akippa</span>
+                Explore <span className="italic text-[#d4a017]">AIPECA</span>
               </h2>
             </div>
 
             <p className="max-w-xl text-base text-white/70">
-              A look into the people, programs, and community moments shaping the Akippa journey.
+              A look into the people, programs, and community moments shaping the AIPECA journey.
             </p>
           </div>
 

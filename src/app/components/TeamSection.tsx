@@ -10,7 +10,7 @@ const team = [
   title: 'Chairman / President',
   bio: 'A seasoned community leader with 25+ years experience in cooperative development and rural economic empowerment across Akwa Ibom State.',
   image: "/assets/images/chairman sir.jpeg",
-  imageAlt: 'Portrait of REV.AMB. SAM IBANGA, Chairman and President of AKPECA',
+  imageAlt: 'Portrait of REV.AMB. SAM IBANGA, Chairman and President of AIPECA',
   initials: 'SI',
   imagePosition: 'center 18%'
 },
@@ -19,7 +19,7 @@ const team = [
   title: 'Executive Secretary',
   bio: 'B.SC. BUSINESS ADMINISTRATION • Member, INSTITUTE OF STRATEGIC MGT OF NIGERIA • Certified/Ordained Intl Preacher and Associate PST WSDM.',
   image: "/assets/images/executive secetary.jpeg",
-  imageAlt: 'Portrait of RT Rev AKPAN FRIDAY, Executive Secretary of AKPECA',
+  imageAlt: 'Portrait of RT Rev AKPAN FRIDAY, Executive Secretary of AIPECA',
   initials: 'AF',
   imagePosition: 'center 22%'
 },
@@ -28,7 +28,7 @@ const team = [
   title: 'Director of Programs',
   bio: 'An NGO professional with expertise in program design, monitoring and evaluation, and community mobilization across the Niger Delta.',
   image: "/assets/images/director of programs.jpeg",
-  imageAlt: 'Portrait of PST MRS JOY SAM, Director of Programs at AKPECA',
+  imageAlt: 'Portrait of PST MRS JOY SAM, Director of Programs at AIPECA',
   initials: 'JS',
   imagePosition: 'center 18%'
 }
@@ -85,7 +85,7 @@ export default function TeamSection() {
           </h2>
           <p className="mt-4 text-base text-muted-foreground max-w-xl mx-auto">
             Experienced, passionate, and deeply rooted in Akwa Ibom communities — our
-            leadership team drives AKPECA's mission every day.
+            leadership team drives AIPECA's mission every day.
           </p>
         </div>
 

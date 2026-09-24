@@ -76,7 +76,7 @@ export default function GalleryPage() {
             Explore Our Gallery
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base text-[rgba(254,244,230,1)] sm:text-lg">
-            A visual collection of Akippa events, people, and partnerships that reflect our commitment to community empowerment.
+            A visual collection of AIPECA events, people, and partnerships that reflect our commitment to community empowerment.
           </p>
         </div>
       </section>
