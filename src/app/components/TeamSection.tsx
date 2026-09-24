@@ -6,53 +6,33 @@ import AppImage from '@/components/ui/AppImage';
 
 const team = [
 {
-  name: 'AMB E.E PATRICK',
+  name: 'REV.AMB. SAM IBANGA',
   title: 'Chairman / President',
   bio: 'A seasoned community leader with 25+ years experience in cooperative development and rural economic empowerment across Akwa Ibom State.',
-  image: "/assets/images/ChatGPT_Image_Jul_1__2026__11_02_31_AM-1785272306305.png",
-  imageAlt: 'Portrait of AMB E.E PATRICK, Chairman and President of AKPECA',
-  initials: 'EP'
+  image: "/assets/images/chairman sir.jpeg",
+  imageAlt: 'Portrait of REV.AMB. SAM IBANGA, Chairman and President of AKPECA',
+  initials: 'SI',
+  imagePosition: 'center 18%'
 },
 {
   name: 'RT Rev AKPAN FRIDAY',
   title: 'Executive Secretary',
-  bio: 'A certified cooperative administrator who has led AKPECA\'s documentation and compliance frameworks since its founding year.',
-  image: "/assets/images/passport_portrait_studio-1785304982818.png",
+  bio: 'B.SC. BUSINESS ADMINISTRATION • Member, INSTITUTE OF STRATEGIC MGT OF NIGERIA • Certified/Ordained Intl Preacher and Associate PST WSDM.',
+  image: "/assets/images/executive secetary.jpeg",
   imageAlt: 'Portrait of RT Rev AKPAN FRIDAY, Executive Secretary of AKPECA',
-  initials: 'AF'
+  initials: 'AF',
+  imagePosition: 'center 22%'
 },
 {
-  name: 'Mr. Unyime Etim',
+  name: 'PST MRS JOY SAM',
   title: 'Director of Programs',
   bio: 'An NGO professional with expertise in program design, monitoring and evaluation, and community mobilization across the Niger Delta.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_12de22584-1763298920012.png",
-  imageAlt: 'Portrait of a young Nigerian professional man, intelligent expression, clean background',
-  initials: 'UE'
-},
-{
-  name: 'Mrs. Arit Essien',
-  title: 'Director of Finance',
-  bio: 'A chartered accountant overseeing AKPECA\'s financial integrity, loan disbursements, and member savings with meticulous care.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_106a70f7a-1763298918633.png",
-  imageAlt: 'Portrait of a professional Nigerian woman, poised and confident, neutral light background',
-  initials: 'AE'
-},
-{
-  name: 'Mr. Emmanuel Udo',
-  title: 'Director of Community Relations',
-  bio: 'A grassroots mobilizer who has built AKPECA\'s presence across 10 LGAs through trust, partnerships, and consistent community engagement.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1d79c718d-1772658509211.png",
-  imageAlt: 'Portrait of a friendly Nigerian man in professional attire, warm and approachable expression',
-  initials: 'EU'
-},
-{
-  name: 'Miss Victoria Nyong',
-  title: 'Youth & Women Coordinator',
-  bio: 'A passionate advocate for gender equity and youth empowerment who has trained over 200 women and young people in entrepreneurship skills.',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1f988ed0a-1763299910870.png",
-  imageAlt: 'Portrait of a young Nigerian woman, bright and confident smile, professional and inspiring presence',
-  initials: 'VN'
-}];
+  image: "/assets/images/director of programs.jpeg",
+  imageAlt: 'Portrait of PST MRS JOY SAM, Director of Programs at AKPECA',
+  initials: 'JS',
+  imagePosition: 'center 18%'
+}
+];
 
 
 const socialIcons = [
@@ -107,17 +87,11 @@ export default function TeamSection() {
             Experienced, passionate, and deeply rooted in Akwa Ibom communities — our
             leadership team drives AKPECA's mission every day.
           </p>
-          <Link
-            href="/gallery"
-            className="mt-8 inline-flex items-center justify-center px-8 py-3 text-sm font-semibold text-primary-foreground bg-primary rounded-full hover:bg-secondary-foreground transition-colors duration-200"
-          >
-            View Our Gallery
-          </Link>
         </div>
 
         {/* Team Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-          {team?.map((member, i) =>
+          {team?.slice(0, 3).map((member, i) =>
           <div
             key={member?.name}
             className={`reveal-on-scroll reveal-delay-${i % 3 + 1} card-lift bg-muted rounded-3xl overflow-hidden border border-border group`}>
@@ -129,6 +103,7 @@ export default function TeamSection() {
                 alt={member?.imageAlt}
                 fill
                 className="object-cover object-center"
+                style={{ objectPosition: member?.imagePosition ?? 'center' }}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
               
                 {/* Subtle gradient */}
@@ -147,19 +122,7 @@ export default function TeamSection() {
                   {member?.bio}
                 </p>
 
-                {/* Social Icons */}
-                <div className="flex items-center gap-2">
-                  {socialIcons?.map((s) =>
-                <a
-                  key={s?.name}
-                  href="#"
-                  aria-label={`${member?.name} on ${s?.name}`}
-                  className="w-8 h-8 rounded-full bg-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
-                  
-                      {s?.icon}
-                    </a>
-                )}
-                </div>
+
               </div>
             </div>
           )}

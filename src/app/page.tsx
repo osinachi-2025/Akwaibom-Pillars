@@ -7,6 +7,7 @@ import ProgramsSection from './components/ProgramsSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import TeamSection from './components/TeamSection';
 import ContactSection from './components/ContactSection';
+import GalleryShowcase from '@/components/gallery/GalleryShowcase';
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <ProgramsSection />
+      <GalleryShowcase />
       <TestimonialsSection />
       <TeamSection />
       <ContactSection />

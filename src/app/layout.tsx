@@ -30,7 +30,12 @@ export const metadata: Metadata = {
   description:
     'AKWA IBOM PILLARS EMPOWERMENT COOPERATIVE ASSOCIATION unites communities across Akwa Ibom State through cooperative savings, skills development, and sustainable livelihoods.',
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [
+      { url: '/assets/images/favicon.jpeg', type: 'image/jpeg' },
+      { url: '/assets/images/favicon.jpeg', type: 'image/jpeg' },
+    ],
+    shortcut: '/assets/images/favicon.jpeg',
+    apple: '/assets/images/favicon.jpeg',
   },
 };
 

@@ -173,4 +173,13 @@
     z-index: 9999;
     opacity: 0.025;
   }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }

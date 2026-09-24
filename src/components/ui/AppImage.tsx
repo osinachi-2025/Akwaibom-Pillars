@@ -19,6 +19,8 @@ interface AppImageProps {
     fallbackSrc?: string;
     loading?: 'lazy' | 'eager';
     unoptimized?: boolean;
+    objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
+    style?: React.CSSProperties;
     [key: string]: any;
 }
 
@@ -38,6 +40,8 @@ const AppImage = memo(function AppImage({
     fallbackSrc = '/assets/images/no_image.png',
     loading = 'lazy',
     unoptimized = false,
+    objectFit = 'cover',
+    style,
     ...props
 }: AppImageProps) {
     const [imageSrc, setImageSrc] = useState(src);
@@ -100,7 +104,7 @@ const AppImage = memo(function AppImage({
                     {...imageProps}
                     fill
                     sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit, ...style }}
                     {...props}
                 />
             </div>
@@ -113,6 +117,7 @@ const AppImage = memo(function AppImage({
             width={width || 400}
             height={height || 300}
             sizes={sizes}
+            style={style}
             {...props}
         />
     );
