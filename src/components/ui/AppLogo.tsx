@@ -13,7 +13,7 @@ interface AppLogoProps {
 }
 
 const AppLogo = memo(function AppLogo({
-  src = '/assets/images/WhatsApp_Image_2026-04-27_at_1.51.02_PM__2__-_Copy-1785259118285.jpeg',
+  src = '/favicon.ico',
   iconName = 'SparklesIcon',
   size = 64,
   className = '',
