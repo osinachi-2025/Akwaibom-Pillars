@@ -77,9 +77,10 @@ export default function HeroSection() {
 
         {/* Subheadline */}
         <p className="reveal-on-scroll reveal-delay-3 text-lg text-white/80 max-w-2xl leading-relaxed mb-10">
-          AKWA IBOM PILLARS EMPOWERMENT COOPERATIVE ASSOCIATION — Uniting people
-          across Akwa Ibom State through cooperative enterprise, skills development,
-          and community upliftment.
+          <span className="mb-2 block text-base font-bold uppercase tracking-[0.18em] text-white">
+            AKWA IBOM PILLARS EMPOWERMENT COOPERATIVE ASSOCIATION
+          </span>
+          Empowering People, Strengthening Communities, and Uniting Nigerians through Cooperative Enterprise, Skills Development, and Sustainable Economic Opportunities.
         </p>
 
         {/* CTA Buttons */}

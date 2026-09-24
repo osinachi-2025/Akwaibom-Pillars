@@ -69,8 +69,9 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed max-w-xs mt-4">
-              Uniting communities across Akwa Ibom State through cooperative enterprise,
-              skills development, and sustainable livelihoods since 2013.
+              AKWA IBOM PILLARS EMPOWERMENT COOPERATIVE ASSOCIATION — Empowering People,
+              Strengthening Communities, and Uniting Nigerians through Cooperative Enterprise,
+              Skills Development, and Sustainable Economic Opportunities.
             </p>
             <div className="flex items-center gap-3 mt-6">
               {socialLinks.map((s) => (
